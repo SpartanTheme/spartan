@@ -1,2 +1,2 @@
 # spartan
-Wordpress starter
+~Current Version:0.2~
