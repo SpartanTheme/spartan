@@ -3,7 +3,7 @@
 Plugin Name: WP GitHub Plugin Updater Test
 Plugin URI: https://github.com/SpartanTheme/spartan
 Description: Semi-automated test for the GitHub Plugin Updater
-Version: 1.3
+Version: 1.4
 Author: Joachim Kudish
 Author URI: http://jkudish.com/
 License: GPLv2
