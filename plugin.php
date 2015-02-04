@@ -3,7 +3,7 @@
 Plugin Name: WP Spartan
 Plugin URI: https://github.com/SpartanTheme/spartan
 Description: Semi-automated test for the GitHub Plugin Updater
-Version: 0.2
+Version: 1.2
 Author: Renzo Johnson
 Author URI: http://renzojohnson.com
 License: GPLv2
@@ -54,7 +54,7 @@ function github_plugin_updater_test_init() {
 
 		$config = array(
 			'slug' => plugin_basename( __FILE__ ),
-			'proper_folder_name' => 'github-updater',
+			'proper_folder_name' => 'spartan-master',
 			'api_url' => 'https://api.github.com/repos/SpartanTheme/spartan',
 			'raw_url' => 'https://raw.github.com/SpartanTheme/spartan/master',
 			'github_url' => 'https://github.com/SpartanTheme/spartan',
