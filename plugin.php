@@ -53,7 +53,7 @@ function github_plugin_updater_test_init() {
 			'zip_url' => 'https://github.com/SpartanTheme/spartan/archive/master.zip',
 			'sslverify' => true,
 			'requires' => '3.0',
-			'tested' => '3.3',
+			'tested' => '4.2',
 			'readme' => 'README.md',
 			'access_token' => '',
 		);
