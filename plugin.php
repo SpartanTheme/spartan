@@ -1,20 +1,12 @@
 <?php
 /*
-Plugin Name: WP Spartan
-Plugin URI: https://github.com/SpartanTheme/spartan
+Plugin Name: WP GitHub Plugin Updater Test
+Plugin URI: https://github.com/jkudish/WordPress-GitHub-Plugin-Updater
 Description: Semi-automated test for the GitHub Plugin Updater
-Version: 1.2
-Author: Renzo Johnson
-Author URI: http://renzojohnson.com
+Version: 0.1
+Author: Joachim Kudish
+Author URI: http://jkudish.com/
 License: GPLv2
-
-License:           GNU General Public License v2
-License URI:       http://www.gnu.org/licenses/gpl-2.0.html
-Domain Path:       /languages
-Text Domain:       spartan
-GitHub Plugin URI: https://github.com/SpartanTheme/spartan
-GitHub Branch:     master
-
 */
 
 /**
@@ -54,14 +46,14 @@ function github_plugin_updater_test_init() {
 
 		$config = array(
 			'slug' => plugin_basename( __FILE__ ),
-			'proper_folder_name' => 'spartan-master',
-			'api_url' => 'https://api.github.com/repos/SpartanTheme/spartan',
-			'raw_url' => 'https://raw.github.com/SpartanTheme/spartan/master',
-			'github_url' => 'https://github.com/SpartanTheme/spartan',
-			'zip_url' => 'https://github.com/SpartanTheme/spartan/archive/master.zip',
+			'proper_folder_name' => 'github-updater',
+			'api_url' => 'https://api.github.com/repos/jkudish/WordPress-GitHub-Plugin-Updater',
+			'raw_url' => 'https://raw.github.com/jkudish/WordPress-GitHub-Plugin-Updater/master',
+			'github_url' => 'https://github.com/jkudish/WordPress-GitHub-Plugin-Updater',
+			'zip_url' => 'https://github.com/jkudish/WordPress-GitHub-Plugin-Updater/archive/master.zip',
 			'sslverify' => true,
-			'requires' => '4.0',
-			'tested' => '4.2',
+			'requires' => '3.0',
+			'tested' => '3.3',
 			'readme' => 'README.md',
 			'access_token' => '',
 		);
@@ -334,18 +326,3 @@ class WPGitHubUpdaterSetup {
 	}
 }
 add_action( 'init', create_function( '', 'global $WPGitHubUpdaterSetup; $WPGitHubUpdaterSetup = new WPGitHubUpdaterSetup();' ) );
-
-
-
-/* Custom items to the footer right before </body>
-================================================== */
-add_filter( 'wp_footer' , 'spartan_footerxx' , 1 );
-function spartan_footerxx() {
-
-   $spartan_footer_output .= '<h1 style="background-color:red; color:white;z-index: 99; position: absolute; width: 100%;">'. "\n";
-   $spartan_footer_output .= 'hola'. "\n";
-   // $spartan_footer_output .= do_shortcode( '[sf_modal header="Get Service Now!" btn_text="Find Out More"][contact-form-7 id="3" title="contact"][/sf_modal]' );
-   $spartan_footer_output .= '</h1>'. "\n";
-
-   echo $spartan_footer_output;
-}
