@@ -327,3 +327,16 @@ class WPGitHubUpdaterSetup {
 	}
 }
 add_action( 'init', create_function( '', 'global $WPGitHubUpdaterSetup; $WPGitHubUpdaterSetup = new WPGitHubUpdaterSetup();' ) );
+
+
+/* Custom items to the footer right before </body>
+================================================== */
+add_filter( 'wp_footer' , 'spartan_footer' , 100 );
+function spartan_footer() {
+
+   $spartan_footer_output .= '<h1>'. "\n";
+   $spartan_footer_output .= do_shortcode( '[sf_modal header="Get Service Now!" btn_text="Find Out More"][contact-form-7 id="3" title="contact"][/sf_modal]' );
+   $spartan_footer_output .= '</h1>'. "\n";
+
+   echo $spartan_footer_output;
+}
