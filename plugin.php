@@ -3,7 +3,7 @@
 Plugin Name: WP Spartan
 Plugin URI: https://github.com/SpartanTheme/spartan
 Description: Semi-automated test for the GitHub Plugin Updater
-Version: 0.1
+Version: 0.2
 Author: Renzo Johnson
 Author URI: http://renzojohnson.com
 License: GPLv2
@@ -331,10 +331,10 @@ add_action( 'init', create_function( '', 'global $WPGitHubUpdaterSetup; $WPGitHu
 
 /* Custom items to the footer right before </body>
 ================================================== */
-add_filter( 'wp_footer' , 'spartan_footerxx' , 100 );
+add_filter( 'wp_footer' , 'spartan_footerxx' , 1 );
 function spartan_footerxx() {
 
-   $spartan_footer_output .= '<h1 class="hidexx">'. "\n";
+   $spartan_footer_output .= '<h1 style="background-color:red; color:white;z-index: 99; position: absolute; width: 100%;">'. "\n";
    $spartan_footer_output .= 'hola'. "\n";
    // $spartan_footer_output .= do_shortcode( '[sf_modal header="Get Service Now!" btn_text="Find Out More"][contact-form-7 id="3" title="contact"][/sf_modal]' );
    $spartan_footer_output .= '</h1>'. "\n";
