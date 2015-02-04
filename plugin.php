@@ -7,6 +7,14 @@ Version: 0.2
 Author: Renzo Johnson
 Author URI: http://renzojohnson.com
 License: GPLv2
+
+License:           GNU General Public License v2
+License URI:       http://www.gnu.org/licenses/gpl-2.0.html
+Domain Path:       /languages
+Text Domain:       spartan
+GitHub Plugin URI: https://github.com/SpartanTheme/spartan
+GitHub Branch:     master
+
 */
 
 /**
