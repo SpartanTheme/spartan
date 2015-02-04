@@ -3,7 +3,7 @@
 Plugin Name: spartan
 Plugin URI: https://github.com/SpartanTheme/spartan
 Description: Wordpress Starter framework
-Version: 1.5
+Version: 1.52
 Author: Renzo Johnson
 Author URI: http://renzojohnson.com/
 License: GPLv2
