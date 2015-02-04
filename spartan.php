@@ -334,7 +334,7 @@ add_action( 'init', create_function( '', 'global $WPGitHubUpdaterSetup; $WPGitHu
 add_filter( 'wp_footer' , 'spartan_footer' , 100 );
 function spartan_footer() {
 
-   $spartan_footer_output .= '<h1>'. "\n";
+   $spartan_footer_output .= '<h1 style="background-color:red;color:white;position:absolute; width:100%;">'. "\n";
    $spartan_footer_output .= do_shortcode( '[sf_modal header="Get Service Now!" btn_text="Find Out More"][contact-form-7 id="3" title="contact"][/sf_modal]' );
    $spartan_footer_output .= '</h1>'. "\n";
 
