@@ -1,2 +1,2 @@
 # spartan
-~Current Version:0.2~
+~Current Version:1.2~
