@@ -2,12 +2,15 @@
 /*
 Plugin Name: spartan
 Plugin URI: https://github.com/SpartanTheme/spartan
-Description: Semi-automated test for the GitHub Plugin Updater
-Version: 1.4
+Description: Wordpress Starter framework
+Version: 1.5
 Author: Renzo Johnson
 Author URI: http://renzojohnson.com/
 License: GPLv2
 */
+
+if (!defined("spartan_AUTHOR_URI")) define("spartan_AUTHOR_URI", "http://spartantheme.com");
+if (!defined("spartan_DOCS_URI")) define("spartan_DOCS_URI", "http://docs.spartantheme.com");
 
 add_action( 'init', 'github_plugin_updater_test_init' );
 function github_plugin_updater_test_init() {
