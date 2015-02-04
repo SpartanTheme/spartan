@@ -31,7 +31,7 @@ This class was originally developed by [Joachim Kudish](https://github.com/jkudi
 
 * In your GitHub repository, you will need to include the following line (formatted exactly like this) anywhere in your Readme file:
 
-	`~Current Version:1.4~`
+	`~Current Version:1.5~`
 
 * You will need to update the version number anytime you update the plugin, this will ultimately let the plugin know that a new version is available.
 
