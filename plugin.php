@@ -1,9 +1,9 @@
 <?php
 /*
 Plugin Name: WP GitHub Plugin Updater Test
-Plugin URI: https://github.com/jkudish/WordPress-GitHub-Plugin-Updater
+Plugin URI: https://github.com/SpartanTheme/spartan
 Description: Semi-automated test for the GitHub Plugin Updater
-Version: 1.5
+Version: 0.1
 Author: Joachim Kudish
 Author URI: http://jkudish.com/
 License: GPLv2
@@ -46,11 +46,11 @@ function github_plugin_updater_test_init() {
 
 		$config = array(
 			'slug' => plugin_basename( __FILE__ ),
-			'proper_folder_name' => 'github-updater',
-			'api_url' => 'https://api.github.com/repos/jkudish/WordPress-GitHub-Plugin-Updater',
-			'raw_url' => 'https://raw.github.com/jkudish/WordPress-GitHub-Plugin-Updater/master',
-			'github_url' => 'https://github.com/jkudish/WordPress-GitHub-Plugin-Updater',
-			'zip_url' => 'https://github.com/jkudish/WordPress-GitHub-Plugin-Updater/archive/master.zip',
+			'proper_folder_name' => 'spartan',
+			'api_url' => 'https://api.github.com/repos/SpartanTheme/spartan',
+			'raw_url' => 'https://raw.github.com/SpartanTheme/spartan/master',
+			'github_url' => 'https://github.com/SpartanTheme/spartan',
+			'zip_url' => 'https://github.com/SpartanTheme/spartan/archive/master.zip',
 			'sslverify' => true,
 			'requires' => '3.0',
 			'tested' => '3.3',
