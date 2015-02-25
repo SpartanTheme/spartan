@@ -9,13 +9,52 @@ Author URI: http://renzojohnson.com/
 License: GPLv2
 */
 
-if (!defined("spartan_AUTHOR_URI")) define("spartan_AUTHOR_URI", "http://spartantheme.com");
-if (!defined("spartan_DOCS_URI")) define("spartan_DOCS_URI", "http://docs.spartantheme.com");
+define( 'SPARTAN_VERSION', '1.62' );
+
+define( 'SPARTAN_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
+
+define( 'SPARTAN_PLUGIN_NAME', trim( dirname( SPARTAN_PLUGIN_BASENAME ), '/' ) );
+
+define( 'SPARTAN_PLUGIN_DIR', untrailingslashit( dirname( __FILE__ ) ) );
+
+define( 'SPARTAN_PLUGIN_URL', untrailingslashit( plugins_url( '', __FILE__ ) ) );
+
+define( 'SPARTAN_PLUGIN_MODULES_DIR', SPARTAN_PLUGIN_DIR . '/modules' );
+
+if ( ! defined( 'SPARTAN_LOAD_JS' ) )
+	define( 'SPARTAN_LOAD_JS', true );
+
+if ( ! defined( 'SPARTAN_LOAD_CSS' ) )
+	define( 'SPARTAN_LOAD_CSS', true );
+
+if ( ! defined( 'SPARTAN_AUTOP' ) )
+	define( 'SPARTAN_AUTOP', true );
+
+if ( ! defined( 'SPARTAN_USE_PIPE' ) )
+	define( 'SPARTAN_USE_PIPE', true );
+
+if ( ! defined( 'SPARTAN_ADMIN_READ_CAPABILITY' ) )
+	define( 'SPARTAN_ADMIN_READ_CAPABILITY', 'edit_posts' );
+
+if ( ! defined( 'SPARTAN_ADMIN_READ_WRITE_CAPABILITY' ) )
+	define( 'SPARTAN_ADMIN_READ_WRITE_CAPABILITY', 'publish_pages' );
+
+if ( ! defined( 'SPARTAN_VERIFY_NONCE' ) )
+	define( 'SPARTAN_VERIFY_NONCE', true );
+
+require_once SPARTAN_PLUGIN_DIR . '/includes/admin.php';
+
+
+
+
+if (!defined("SPARTAN_AUTHOR_URI")) define("SPARTAN_AUTHOR_URI", "http://spartantheme.com");
+if (!defined("SPARTAN_DOCS_URI")) define("SPARTAN_DOCS_URI", "http://docs.spartantheme.com");
 
 add_action( 'init', 'github_plugin_updater_test_init' );
 function github_plugin_updater_test_init() {
 
-	include_once 'updater.php';
+
+	include_once SPARTAN_PLUGIN_DIR . '/includes/updater.php';
 
 	define( 'WP_GITHUB_FORCE_UPDATE', true );
 
