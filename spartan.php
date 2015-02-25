@@ -54,7 +54,7 @@ add_action( 'init', 'github_plugin_updater_test_init' );
 function github_plugin_updater_test_init() {
 
 
-	include_once SPARTAN_PLUGIN_DIR . '/includes/updater.php';
+	include_once SPARTAN_PLUGIN_DIR . '/updater.php';
 
 	define( 'WP_GITHUB_FORCE_UPDATE', true );
 
